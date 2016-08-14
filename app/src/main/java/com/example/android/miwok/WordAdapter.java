@@ -17,6 +17,7 @@ import java.util.ArrayList;
  */
 public class WordAdapter extends ArrayAdapter<Word> {
     private int colorResourceId;
+
     //constructor
     public WordAdapter(Context context, ArrayList<Word> words, int colorResourceId) {
         super(context, 0, words);
@@ -32,6 +33,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
+
 
         // Get the {@link AndroidFlavor} object located at this position in the list
         Word word = getItem(position);
